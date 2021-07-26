@@ -6,12 +6,17 @@
 <meta charset="ISO-8859-1">
 <title>FeedBack</title>
 </head>
-<body>
+<body bgcolor="Aquamarine">
 <form action=feed>
-<div class="container">
+<center>
 <h1>FeedBack</h1>
-<table>
-<tr>
+<table border="1" width="30%" cellpadding="5">
+<thead>
+						<tr>
+							<th colspan="2">Enter Information Here</th>
+						</tr>
+					</thead>
+					<tr>
 <td>
 Name
 <input type="text" placeholder="Enter Name" name ="name" id="name" required>
@@ -41,9 +46,13 @@ Feedback
 <input type="text" placeholder="Enter feedback id" name="id" required>
 </td>
 </tr>
+ <tr>
+                        <td><input type="submit" value="Submit" /></td>
+                       
+                    </tr>
 </table>
-<button >submit</button>
-</div>
+</center>
+
 </form>
 </body>
 </html>

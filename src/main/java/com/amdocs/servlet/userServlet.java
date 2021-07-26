@@ -16,7 +16,7 @@ import com.amdocs.model.User;
 
 //@WebServlet("/register")
 public class userServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 102831973239L;
 private UserDao userdao=new UserDao();
 
 
@@ -49,13 +49,20 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 	    user.setPassword(pass);
 	    user.setAddress(address);
 		
-	    try {
-            userdao.registerUser(user);
-            
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+	   
+          int i;
+		try {
+			i = userdao.registerUser(user);
+			 if(i>0)
+	        	  response.sendRedirect("welcome.jsp");
+			 
+		} catch (ClassNotFoundException e) {
+			response.sendRedirect("user.jsp");// TODO Auto-generated catch block
+			//e.printStackTrace();
+		}
+         
+        
+        	  
 
 	}
 }

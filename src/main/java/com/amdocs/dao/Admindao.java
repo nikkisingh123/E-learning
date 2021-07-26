@@ -8,7 +8,7 @@ import com.amdocs.model.Admin;
 public class Admindao {
 
 	public int registerAdmin(Admin admin) throws ClassNotFoundException {
-		String sql = "INSERT INTO user" + "  (admin_id,name,email,password) VALUES " + " (?, ?, ?, ?);";
+		String sql = "INSERT INTO admin" + "  (admin_id,name,email,password) VALUES " + " (?, ?, ?, ?);";
 
 		int result = 0;
 

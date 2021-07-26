@@ -21,7 +21,7 @@ public class UserDao {
 		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tech?useSSL=false",
 				"root", "1234");
 
-				PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 			preparedStatement.setString(1, user.getUserId());
 			preparedStatement.setString(2, user.getName());
 			preparedStatement.setString(3, user.getPhoneNumber());
@@ -32,11 +32,11 @@ public class UserDao {
 			preparedStatement.setString(8, user.getUploadPhoto());
 
 			System.out.println(preparedStatement);
-
-			result = preparedStatement.executeUpdate();
+             result = preparedStatement.executeUpdate();
 		} catch (Exception e) {
-
+			
 		}
+		
 		return result;
 	}
 
