@@ -1,4 +1,4 @@
-package Course.Servlet;
+package com.amdocs.servlet;
 
 public class CourseServ {
 

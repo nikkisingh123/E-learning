@@ -1,47 +1,47 @@
-package Contact.Model;
+package com.amdocs.model;
 
 public class Contact {
-String Name;
-String Email;
-String Phone;
-String Message;
-String UserID;
-String Contact_Id;
+String name;
+String email;
+String phone;
+String message;
+String userID;
+String contactId;
 public String getName() {
-	return Name;
+	return name;
 }
 public void setName(String name) {
-	Name = name;
+	this.name = name;
 }
 public String getEmail() {
-	return Email;
+	return email;
 }
 public void setEmail(String email) {
-	Email = email;
+	this.email = email;
 }
 public String getPhone() {
-	return Phone;
+	return phone;
 }
 public void setPhone(String phone) {
-	Phone = phone;
+	this.phone = phone;
 }
 public String getMessage() {
-	return Message;
+	return message;
 }
 public void setMessage(String message) {
-	Message = message;
+	this.message = message;
 }
 public String getUserID() {
-	return UserID;
+	return userID;
 }
 public void setUserID(String userID) {
-	UserID = userID;
+	this.userID = userID;
 }
 public String getContact_Id() {
-	return Contact_Id;
+	return contactId;
 }
-public void setContact_Id(String contact_Id) {
-	Contact_Id = contact_Id;
+public void setContact_Id(String contactId) {
+	this.contactId = contactId;
 }
 
 }

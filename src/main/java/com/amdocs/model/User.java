@@ -1,15 +1,22 @@
-package com.user.model;
+package com.amdocs.model;
 
 import java.io.Serializable;
 
 public class User implements Serializable {
 	String name;
-	String Email;
-	String UserId;
-	String RegDate;
-	String Phone_Number;
+	String email;
+	String userId;
+	String regDate;
+	String phoneNumber;
 	String password;
-	String Address;
+	String address;
+	String uploadPhoto;
+	public String getUploadPhoto() {
+		return uploadPhoto;
+	}
+	public void setUploadPhoto(String uploadPhoto) {
+		this.uploadPhoto = uploadPhoto;
+	}
 	public String getName() {
 		return name;
 	}
@@ -17,28 +24,28 @@ public class User implements Serializable {
 		this.name = name;
 	}
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 	public String getUserId() {
-		return UserId;
+		return userId;
 	}
 	public void setUserId(String userId) {
-		UserId = userId;
+		this.userId = userId;
 	}
 	public String getRegDate() {
-		return RegDate;
+		return regDate;
 	}
 	public void setRegDate(String regDate) {
-		RegDate = regDate;
+		this.regDate = regDate;
 	}
-	public String getPhone_Number() {
-		return Phone_Number;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
-	public void setPhone_Number(String phone_Number) {
-		Phone_Number = phone_Number;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	public String getPassword() {
 		return password;
@@ -47,12 +54,11 @@ public class User implements Serializable {
 		this.password = password;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	
-
 	
 }

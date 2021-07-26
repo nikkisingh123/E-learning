@@ -1,33 +1,33 @@
-package Admin.Model;
+package com.amdocs.model;
 
 public class Admin {
-String Name;
-String Email;
-String Password;
-String AdminId;
+String name;
+String email;
+String password;
 public String getName() {
-	return Name;
+	return name;
 }
 public void setName(String name) {
-	Name = name;
+	this.name = name;
 }
 public String getEmail() {
-	return Email;
+	return email;
 }
 public void setEmail(String email) {
-	Email = email;
+	this.email = email;
 }
 public String getPassword() {
-	return Password;
+	return password;
 }
 public void setPassword(String password) {
-	Password = password;
+	this.password = password;
 }
 public String getAdminId() {
-	return AdminId;
+	return adminId;
 }
 public void setAdminId(String adminId) {
-	AdminId = adminId;
+	this.adminId = adminId;
 }
+String adminId;
 
 }
