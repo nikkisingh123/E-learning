@@ -8,7 +8,7 @@ import com.amdocs.model.Contact;
 public class ContactDao {
 	public int registerContact(Contact contact) throws ClassNotFoundException {
 
-		String sql = "INSERT INTO user" + "  (user_id,name, Email,Phone_no,Message,contact_id) VALUES "
+		String sql = "INSERT INTO user" + "(user_id,name, Email,Phone_no,Message,contact_id) VALUES "
 				+ " (?, ?, ?, ?,?,?);";
 
 		int result = 0;

@@ -6,7 +6,7 @@
 	<display-name>RealProject</display-name>
 	<servlet>
 		<servlet-name>user</servlet-name>
-		<servlet-class>com.user.userServlet</servlet-class>
+		<servlet-class>com.amdocs.servlet.userServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -16,7 +16,7 @@
 
 	<servlet>
 		<servlet-name>admin</servlet-name>
-		<servlet-class>Admin.Servlet.AdminServ</servlet-class>
+		<servlet-class>com.amdocs.servlet.AdminServ</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -26,7 +26,7 @@
 
 	<servlet>
 		<servlet-name>feedback</servlet-name>
-		<servlet-class>Feedback.Servlet.FeedbackServ</servlet-class>
+		<servlet-class>com.amdocs.servlet.FeedbackServ</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -36,12 +36,21 @@
 
 	<servlet>
 		<servlet-name>contact</servlet-name>
-		<servlet-class>Contact.Servlet.ContactServlet</servlet-class>
+		<servlet-class>com.amdocs.servlet.ContactServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>contact</servlet-name>
 		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>course</servlet-name>
+		<servlet-class>com.amdocs.servlet.CourseServ</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>course</servlet-name>
+		<url-pattern>/course</url-pattern>
 	</servlet-mapping>
 
 </web-app>
